@@ -20,15 +20,13 @@ count = int(len(word)) * 100
 i = -int (len(word))
 while guess != corect and guess != "":
     print("к сожелению вы неправы")
-    guess = input("Попробуйте еще раз")
+    guess = input("Попробуйте еще раз :")
     count -= 100
     n += 1
     if n//3 == 0:
-        c = i + 1
-        print("Подсказка ! буква номер ",c,":")
-        print(word[i])
+        С = i + 1
+        print("Подсказка ! буква номер ",С,":")
         i += 1
 if guess == corect:
-    procent = count/(int(len(word)) * 100)
-    print("вы угадали!!!\n", "вы потратели",n,"попытки и получили",count,"очков (или угадав слово на ",procent,"%)")
+    print("вы угадали!!!\n", "вы потратели",n,"попытки и получили",count,"очков  ")
 
