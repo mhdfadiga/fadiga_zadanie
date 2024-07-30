@@ -1,4 +1,4 @@
-class cards(object):
+class Cards(object):
     RANKS = ["А", "2", "З", "4", "5", "6", "7", "В", "9", "10", "J", "Q", "К"]
     SUITS = ["с", "d", "h", "s"]
 
@@ -43,9 +43,9 @@ class Hand(object):
 
 class Deck(Hand):
     def populate(self):
-        for suit in cards.SUITS:
-            for rank in cards.RANKS:
-                self.add(cards(rank,suit))
+        for suit in Cards.SUITS:
+            for rank in Cards.RANKS:
+                self.add(Cards(rank,suit))
 
     def shuffle(self):
         import random

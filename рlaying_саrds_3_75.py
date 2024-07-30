@@ -33,18 +33,23 @@ Card1 = Card("A","C")
 Card2 = Unprintable_Card("A","d")
 Card3 = Positionable_Сard("A","h")
 
-print("Печатаю объект Card:")
+print("nneчaтaю объект UnprintaЫe_Card:")
 print(Card1)
 
 print("\nneчaтaю объект UnprintaЫe_Card:")
 print(Card2)
 
-print( "\nПечатаю объект Positiоn e_Card: ")
+print("\nПечатаю объект Pos i t i оnаЫ e_Card: ")
 print(Card3)
 
 print("Переворачиваю объект PositionaЫe Card. ")
 Card3.flip()
 
+
 print("\nПeчaтaю объект PositionaЫe_Card:")
-print(Card3)
+print (Card3)
 input("\n\nHaжмитe Enter. чтобы выйти.")
+
+
+
+

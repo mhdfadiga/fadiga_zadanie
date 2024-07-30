@@ -1,4 +1,4 @@
-class cards(object):
+class Cards(object):
     RANKS = ["А", "2", "З", "4", "5", "6", "7", "В", "9", "10", "J", "Q", "К"]
     SUITS = ["с", "d", "h", "s"]
     def __init__(self,rank, suit):
@@ -31,9 +31,9 @@ class Hand(object):
 class deck(Hand):
     def populate(self):
         self.cards = []
-        for suit in cards.SUITS:
-            for rank in cards.RANKS:
-                self.add(cards(rank, suit))
+        for suit in Cards.SUITS:
+            for rank in Cards.RANKS:
+                self.add(Cards(rank, suit))
 
     def shuffle(self):
         import random
@@ -72,6 +72,6 @@ print("Ocтaлocь в колоде:")
 print(deck1)
 
 deck1.clear()
-print( "\ nКолода очищена.")
+print( "\nКолода очищена.")
 print("Boт как она выглядит теперь:",deck1)
 input("\n\nHaжмитe Enter. чтобы выйти.")

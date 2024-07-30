@@ -9,7 +9,7 @@ class Alien(object):
               Уже и в глазах темнеет ... Передай полутора миллионам моих личинок. что я любилих
             Прощай. безжалостный мир.""")
 
-        print("\t\tгибeль пришельца\n")
+print("\t\t\t\t\tгибeль пришельца\n")
 hello = player()
 invader = Alien()
 hello.blast(invader)
